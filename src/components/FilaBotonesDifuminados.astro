@@ -1,0 +1,108 @@
+---
+import Boton from "./BotonDifuminado.astro";
+const {urlBoton1, textoBoton1, urlBoton2, textoBoton2, urlBoton3, textoBoton3, urlBoton4, textoBoton4, urlBoton5, textoBoton5, urlBoton6, textoBoton6, urlBoton7, textoBoton7, urlBoton8, textoBoton8} = Astro.props
+---
+
+<ul class="lg:flex lg:gap-x-2 w-full justify-center my-4 py-2">
+    <div class="md:flex gap-x-2 md:w-full lg:w-fit justify-center">
+        <div class="flex gap-x-2 md:w-fit w-full justify-center">
+            <Boton direccion={urlBoton1} 
+            texto={textoBoton1}/>
+            <Boton direccion={urlBoton2}
+            texto={textoBoton2}/>
+            <Boton direccion={urlBoton3}
+            texto={textoBoton3}/>
+        </div>
+        <div class="flex gap-x-2 md:w-fit w-full justify-center my-3 md:m-0">
+            <Boton direccion={urlBoton4}
+            texto={textoBoton4}/>
+            <Boton direccion={urlBoton5}
+            texto={textoBoton5}/>
+            <Boton direccion={urlBoton6}
+            texto={textoBoton6}/>
+        </div>
+    </div>
+    <div class="flex gap-x-2 w-full lg:w-fit justify-center md:mt-3 lg:m-0">
+        <Boton direccion={urlBoton7}
+        texto={textoBoton7}/>
+        <Boton direccion={urlBoton8} 
+        texto={textoBoton8}/>
+    </div>
+</ul>
+
+<style>
+    .clic{
+        display:none;
+    }
+    #m #matemáticas{
+        .clic{
+            display:block;
+        }
+        .none{
+            display:none;
+        }
+    }
+
+    #b #biología{
+        .clic{
+            display:block;
+        }
+        .none{
+            display:none;
+        }
+    }
+
+    #g #geología{
+        .clic{
+            display:block;
+        }
+        .none{
+            display:none;
+        }
+    }
+    
+    #f #física{
+        .clic{
+            display:block;
+        }
+        .none{
+            display:none;
+        }
+    }
+
+    #q #química{
+        .clic{
+            display:block;
+        }
+        .none{
+            display:none;
+        }
+    }
+
+    #t #tecnología{
+        .clic{
+            display:block;
+        }
+        .none{
+            display:none;
+        }
+    }
+
+    #p #programación{
+        .clic{
+            display:block;
+        }
+        .none{
+            display:none;
+        }
+    }
+
+    #c #científicos{
+        .clic{
+            display:block;
+        }
+        .none{
+            display:none;
+        }
+    }
+</style>
