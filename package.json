@@ -5,11 +5,10 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "node scripts/install-pagefind.mjs && astro build && pagefind --source dist",
     "postbuild": "pagefind --source dist",
     "preview": "astro preview",
-    "astro": "astro",
-    "preinstall": "node scripts/patch-pagefind.mjs"
+    "astro": "astro"
   },
   "dependencies": {
     "@astrojs/tailwind": "^5.0.3",
